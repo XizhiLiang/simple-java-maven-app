@@ -24,6 +24,7 @@ public class AppTest
     public void testAppConstructor() {
         try {
             new App();
+			System.out.println("xizhi hahahaha");
         } catch (Exception e) {
             fail("Construction failed.");
         }
@@ -34,6 +35,7 @@ public class AppTest
     {
         App.main(null);
         try {
+			System.out.println("xizhi hahahaha2");
             assertEquals("Hello World!" + System.getProperty("line.separator"), outContent.toString());
         } catch (AssertionError e) {
             fail("\"message\" is not \"Hello World!\"");
@@ -42,6 +44,7 @@ public class AppTest
 
     @After
     public void cleanUpStreams() {
+		System.out.println("xizhi hahahaha3");
         System.setOut(null);
     }
 
